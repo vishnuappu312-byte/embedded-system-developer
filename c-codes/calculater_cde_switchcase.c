@@ -6,6 +6,8 @@ int main()
     float num1, num2, result;
 
     printf("Enter operator (+, -, *, /): ");
+
+
     scanf(" %c", &op);
 
     printf("Enter two numbers: ");
