@@ -11,8 +11,3 @@
 
 # macOS debug symbols
 *.dSYM/
-
-# compiled binaries
-array
-bitwise-logic
-pyramid-pattern
