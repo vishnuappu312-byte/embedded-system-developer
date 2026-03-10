@@ -1,7 +1,17 @@
-# macOS system files
-.DS_Store
-
-# C build files
-*.o
+.DS_Store*.out
 *.exe
-*.out
+*.o
+*.dSYM/
+call-by-value
+call-by-reference
+command-line-argv
+dynamic-array
+struct_packing*.out
+*.exe
+*.o
+*.dSYM/
+call-by-value
+call-by-reference
+command-line-argv
+dynamic-array
+struct_packing
