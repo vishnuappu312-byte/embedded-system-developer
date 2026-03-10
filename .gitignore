@@ -1,15 +1,18 @@
-.DS_Store*.out
+# macOS system files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# C compiled files
+*.out
 *.exe
 *.o
+
+# macOS debug symbols
 *.dSYM/
-call-by-value
-call-by-reference
-command-line-argv
-dynamic-array
-struct_packing*.out
-*.exe
-*.o
-*.dSYM/
+
+# compiled executables
 call-by-value
 call-by-reference
 command-line-argv
