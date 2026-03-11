@@ -29,40 +29,36 @@ int main()
         printf("%d ", arr[i]);
     }
 
-    
-
-    printf("Enter new number of elements: ");
+    printf("\nEnter new number of elements: ");
     scanf("%d", &n);
-int *temp = realloc(arr, (n) * sizeof(int));
-if(temp == NULL)
-{
-    printf("Memory reallocation failed\n");
-    free(arr); 
-    return 1;
-}
-arr = temp; 
 
-for(i = 0; i < n; i++)
-{
-    scanf("%d", &arr[i]);
-}   
-printf("Updated array elements are:\n");
-for(i = 0; i < n; i++)
-{
-    printf("%d ", arr[i]);
-}   
+    int *temp = realloc(arr, n * sizeof(int));
+
+    if(temp == NULL)
+    {
+        printf("Memory reallocation failed\n");
+        free(arr);
+        return 1;
+    }
+
+    arr = temp;
+
+    printf("Enter new elements:\n");
+    for(i = 0; i < n; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+
+    printf("Updated array elements are:\n");
+    for(i = 0; i < n; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+
     free(arr);
+    arr = NULL;
 
-printf("after free array elements are:\n");
-for(i = 0; i < n; i++)
-{
-    printf("%d ", arr[i]);
-}   
-
-
-
-
-
+    printf("\nMemory freed successfully\n");
 
     return 0;
 }
