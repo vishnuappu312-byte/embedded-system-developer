@@ -3,8 +3,6 @@ name: C Build Check
 on:
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 jobs:
   build:
@@ -12,12 +10,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Install GCC
         run: sudo apt-get update && sudo apt-get install -y build-essential
 
-      - name: Compile all C files
+      - name: Compile C files
         run: |
           for file in $(find . -name "*.c"); do
             echo "Compiling $file"
