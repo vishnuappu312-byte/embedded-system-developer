@@ -1,77 +1,82 @@
+# Embedded System Developer Practice
 
-
-
-
-# Embedded Systems Developer Practice
 [![C Build & Run Check](https://github.com/vishnuappu312-byte/embedded-system-developer/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/vishnuappu312-byte/embedded-system-developer/actions/workflows/c-cpp.yml)
 ![Language](https://img.shields.io/badge/language-C-blue)
 ![Platform](https://img.shields.io/badge/platform-macOS-lightgrey)
 ![Repo Size](https://img.shields.io/github/repo-size/vishnuappu312-byte/embedded-system-developer)
-![Last Commit](https://img.shields.io/github/last-commit/vishnuappu312-byte/embedded-system-developer)
-Testing GitHub Actions
-This repository contains my practice work in **C programming, data structures, and embedded systems concepts** developed during my learning journey and training.
 
-The goal of this repository is to strengthen my **Embedded C programming skills** and maintain a **well-structured GitHub portfolio for embedded systems development**.
+This repository contains my **C programming practice, data structures, and embedded system examples** developed during my learning journey.
 
 ---
 
 ## Repository Structure
 
 embedded-system-developer
-│
+
 ├── c-codes  
-│   Collection of C programming examples including pointers,  
-│   memory allocation, structures, and pattern programs.
+Basic C programs such as pointers, memory allocation, and pattern programs.
 
 ├── data-structures  
-│   Implementation of basic data structures using C.
+Implementation of fundamental data structures.
 
 ├── embedded-examples  
-│   Embedded programming examples and logic implementations.
+Embedded programming examples and experiments.
 
 └── Entri-Assessment  
-    Programming assignments completed during  
-    the Entri Embedded Systems training program.
+Programming tasks completed during Entri training.
 
 ---
 
 ## Topics Covered
 
-The repository includes practice programs related to:
+- Basic C Programming
+- Pointer Concepts
+- Bitwise Operations
+- Dynamic Memory Allocation
+- Structure Packing
+- Command Line Arguments
+- Pattern Generation Programs
 
-- Basic C programming
-- Pointer concepts
-- Bitwise operations
-- Dynamic memory allocation (`malloc`, `calloc`, `realloc`)
-- Structure packing and padding
-- Command line arguments
-- Pattern generation programs
-- Fundamental data structures
+---
 
-Each assessment folder contains:
+## Learning Progress
 
-- Source code (`.c`)
-- Program output image (`.png`) where applicable.
+### C Programming
+- [x] Basic syntax
+- [x] Arrays
+- [x] Pointers
+- [x] Structures
+- [x] Dynamic memory allocation
+- [x] Bitwise operations
+- [ ] File handling
+
+### Data Structures
+- [x] Arrays
+- [ ] Linked List
+- [ ] Stack
+- [ ] Queue
+
+### Embedded Systems
+- [x] Bit manipulation
+- [ ] UART communication
+- [ ] I2C communication
+- [ ] SPI communication
+- [ ] Modbus protocol
 
 ---
 
 ## Development Environment
 
-Programming Language: **C**  
+Language: **C**  
+Editor: **VS Code**  
 Version Control: **Git & GitHub**  
-Editor: **Visual Studio Code**  
 Platform: **macOS**
 
 ---
 
-## Objective
+## Continuous Integration
 
-This repository is maintained to:
-
-- Improve **Embedded C programming skills**
-- Practice **problem-solving using C**
-- Maintain a **professional coding portfolio**
-- Prepare for **Embedded Systems Developer roles**
+This repository uses **GitHub Actions** to automatically compile and test C programs whenever code is pushed.
 
 ---
 
@@ -80,5 +85,5 @@ This repository is maintained to:
 Vishnu T R  
 Embedded Systems Developer  
 
-GitHub  
+GitHub:  
 https://github.com/vishnuappu312-byte
