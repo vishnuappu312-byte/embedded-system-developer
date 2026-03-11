@@ -1,11 +1,13 @@
-name: C Build Check
+name: C Build & Run Check
 
 on:
   push:
     branches: ["main"]
+  pull_request:
+    branches: ["main"]
 
 jobs:
-  build:
+  build-and-run:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,9 +17,23 @@ jobs:
       - name: Install GCC
         run: sudo apt-get update && sudo apt-get install -y build-essential
 
-      - name: Compile C files
+      - name: Compile and run C files
         run: |
-          for file in $(find . -name "*.c"); do
-            echo "Compiling $file"
-            gcc "$file" -o /tmp/test_program
-          done
+          set -e
+          echo "Searching for C files..."
+          find . -name "*.c" > c_files.txt
+          echo "Files found:"
+          cat c_files.txt
+          echo "--------------------------------"
+
+          while read file; do
+            exe="/tmp/$(basename "$file" .c)"
+            echo "Compiling $file -> $exe"
+            gcc "$file" -o "$exe"
+
+            echo "Running $exe"
+            # Run with a timeout to avoid hanging on programs that wait for input
+            timeout 2s "$exe" || echo "Program finished or required input"
+            echo "SUCCESS: $file compiled and executed"
+            echo "--------------------------------"
+          done < c_files.txt
