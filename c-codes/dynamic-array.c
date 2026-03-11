@@ -4,6 +4,7 @@
 int main()
 {
     int n, i;
+    int old_n;
     int *arr;
 
     printf("Enter number of elements: ");
@@ -19,21 +20,18 @@ int main()
 
     printf("Enter %d numbers:\n", n);
     for(i = 0; i < n; i++)
-    {
         scanf("%d", &arr[i]);
-    }
 
     printf("Array elements are:\n");
     for(i = 0; i < n; i++)
-    {
         printf("%d ", arr[i]);
-    }
+
+    old_n = n;
 
     printf("\nEnter new number of elements: ");
     scanf("%d", &n);
 
     int *temp = realloc(arr, n * sizeof(int));
-
     if(temp == NULL)
     {
         printf("Memory reallocation failed\n");
@@ -43,17 +41,16 @@ int main()
 
     arr = temp;
 
-    printf("Enter new elements:\n");
-    for(i = 0; i < n; i++)
+    if(n > old_n)
     {
-        scanf("%d", &arr[i]);
+        printf("Enter %d more numbers:\n", n - old_n);
+        for(i = old_n; i < n; i++)
+            scanf("%d", &arr[i]);
     }
 
     printf("Updated array elements are:\n");
     for(i = 0; i < n; i++)
-    {
         printf("%d ", arr[i]);
-    }
 
     free(arr);
     arr = NULL;
