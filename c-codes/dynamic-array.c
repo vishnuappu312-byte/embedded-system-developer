@@ -30,7 +30,6 @@ int main()
     }
 
     
-//free(arr);
 
     printf("Enter new number of elements: ");
     scanf("%d", &n);
