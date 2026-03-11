@@ -1,3 +1,6 @@
+
+[![C Build & Run Check](https://github.com/vishnuappu312-byte/embedded-system-developer/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/vishnuappu312-byte/embedded-system-developer/actions/workflows/c-cpp.yml)
+
 # Embedded Systems Developer Practice
 Testing GitHub Actions
 This repository contains my practice work in **C programming, data structures, and embedded systems concepts** developed during my learning journey and training.
