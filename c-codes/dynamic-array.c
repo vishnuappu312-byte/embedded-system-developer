@@ -9,7 +9,7 @@ int main()
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
-    arr = (int *)malloc(n * sizeof(int));
+    arr = malloc(n * sizeof(int));
 
     if(arr == NULL)
     {
