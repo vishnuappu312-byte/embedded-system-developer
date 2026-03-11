@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Debug symbols
+*.dSYM/
+
+# C compiled files
+*.o
+*.out
+*.exe
