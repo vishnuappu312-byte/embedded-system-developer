@@ -1,5 +1,5 @@
 # Embedded Systems Developer Practice
-
+Testing GitHub Actions
 This repository contains my practice work in **C programming, data structures, and embedded systems concepts** developed during my learning journey and training.
 
 The goal of this repository is to strengthen my **Embedded C programming skills** and maintain a **well-structured GitHub portfolio for embedded systems development**.
