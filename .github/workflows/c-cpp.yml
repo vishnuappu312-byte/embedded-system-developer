@@ -1,4 +1,4 @@
-name: C Build & Run Check
+name: C Programs CI
 
 on:
   push:
@@ -7,33 +7,44 @@ on:
     branches: ["main"]
 
 jobs:
-  build-and-run:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v5
+    - name: Checkout Repository
+      uses: actions/checkout@v5
 
-      - name: Install GCC
-        run: sudo apt-get update && sudo apt-get install -y build-essential
+    - name: Install GCC
+      run: sudo apt-get update && sudo apt-get install -y build-essential
 
-      - name: Compile and run C files
-        run: |
-          set -e
-          echo "Searching for C files..."
-          find . -name "*.c" > c_files.txt
-          echo "Files found:"
-          cat c_files.txt
-          echo "--------------------------------"
+    - name: Compile and Run C Programs
+      run: |
+        set -e
 
-          while read file; do
-            exe="/tmp/$(basename "$file" .c)"
-            echo "Compiling $file -> $exe"
-            gcc "$file" -o "$exe"
+        echo "Searching for C files..."
+        files=$(find . -name "*.c")
 
-            echo "Running $exe"
-            # Run with a timeout to avoid hanging on programs that wait for input
+        echo "Files found:"
+        echo "$files"
+        echo "--------------------------------"
+
+        for file in $files
+        do
+          exe="/tmp/$(basename "$file" .c)"
+
+          echo "Compiling $file -> $exe"
+
+          gcc -Wall -Wextra -fsanitize=address -g "$file" -o "$exe"
+
+          echo "Running $exe"
+
+          # Provide input for array programs
+          if [[ "$file" == *"array.c"* ]]; then
+            echo -e "5\n1 2 3 4 5" | "$exe"
+          else
             timeout 2s "$exe" || echo "Program finished or required input"
-            echo "SUCCESS: $file compiled and executed"
-            echo "--------------------------------"
-          done < c_files.txt
+          fi
+
+          echo "SUCCESS: $file compiled and executed"
+          echo "--------------------------------"
+        done
