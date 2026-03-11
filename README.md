@@ -1,56 +1,68 @@
-# Embedded System Developer Practice
+# Embedded Systems Developer Practice
 
-This repository contains my **C programming practice, data structures, and embedded programming examples** developed during my learning and training.
+This repository contains my practice work in **C programming, data structures, and embedded systems concepts** developed during my learning journey and training.
 
-It is part of my journey to become a **professional Embedded Systems Developer**.
+The goal of this repository is to strengthen my **Embedded C programming skills** and maintain a **well-structured GitHub portfolio for embedded systems development**.
 
 ---
 
 ## Repository Structure
 
 embedded-system-developer
-
+│
 ├── c-codes  
-│   Basic C programs (pointers, memory allocation, patterns, etc.)
+│   Collection of C programming examples including pointers,  
+│   memory allocation, structures, and pattern programs.
 
 ├── data-structures  
-│   Practice programs for arrays, stacks, and other structures
+│   Implementation of basic data structures using C.
 
 ├── embedded-examples  
-│   Embedded system related code examples
+│   Embedded programming examples and logic implementations.
 
 └── Entri-Assessment  
-    Programming assignments completed during Entri training
+    Programming assignments completed during  
+    the Entri Embedded Systems training program.
 
 ---
 
-## Example Programs
+## Topics Covered
 
-- Array operations
+The repository includes practice programs related to:
+
+- Basic C programming
+- Pointer concepts
 - Bitwise operations
-- Pyramid pattern printing
 - Dynamic memory allocation (`malloc`, `calloc`, `realloc`)
-- Structures and pointers
+- Structure packing and padding
+- Command line arguments
+- Pattern generation programs
+- Fundamental data structures
 
 Each assessment folder contains:
+
 - Source code (`.c`)
-- Program output image
+- Program output image (`.png`) where applicable.
 
 ---
 
-## Tools Used
+## Development Environment
 
-- C Programming
-- Embedded C
-- Git & GitHub
-- VS Code
-- macOS Development Environment
+Programming Language: **C**  
+Version Control: **Git & GitHub**  
+Editor: **Visual Studio Code**  
+Platform: **macOS**
 
 ---
 
-## Goal
+## Objective
 
-To build strong **Embedded C programming skills** and maintain a **professional GitHub portfolio** for embedded development roles.
+This repository is maintained to:
+
+- Improve **Embedded C programming skills**
+- Practice **problem-solving using C**
+- Maintain a **professional coding portfolio**
+- Prepare for **Embedded Systems Developer roles**
 
 ---
 
@@ -59,5 +71,5 @@ To build strong **Embedded C programming skills** and maintain a **professional 
 Vishnu T R  
 Embedded Systems Developer  
 
-GitHub:  
+GitHub  
 https://github.com/vishnuappu312-byte
