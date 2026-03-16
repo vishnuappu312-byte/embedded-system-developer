@@ -3,8 +3,12 @@ name: C Programs CI
 on:
   push:
     branches: ["main"]
+    paths:
+      - "c-codes/**"
   pull_request:
     branches: ["main"]
+    paths:
+      - "c-codes/**"
 
 jobs:
   build:
@@ -21,8 +25,9 @@ jobs:
       run: |
         set -e
 
-        echo "Searching for C files..."
-        files=$(find . -name "*.c")
+        echo "Searching for C files in c-codes..."
+
+        files=$(find c-codes -name "*.c")
 
         echo "Files found:"
         echo "$files"
