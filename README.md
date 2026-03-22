@@ -44,9 +44,9 @@ Platform: **macOS**, **Windows**
 
 ## Continuous Integration
 
-This repository uses **GitHub Actions** to automatically:
-	•	Compile and run C programs (c-codes)
-	•	Execute Python scripts (python-codes)
+This repository uses **GitHub Actions** to automatically compile and test C programs and Python Scripts whenever code is pushed.
+
+
 ---
 
 ## Author
