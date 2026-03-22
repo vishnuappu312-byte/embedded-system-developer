@@ -13,22 +13,20 @@ This repository contains my **C programming practice, data structures, and embed
 
 embedded-system-developer
 
-embedded-system-developer/
-│
-├── c-codes/
-│   C programming practice (pointers, memory, patterns)
-│
-├── data-structures/
-│   Basic data structure implementations
-│
-├── embedded-codes/
-│   Embedded system examples (AVR, drivers, etc.)
-│
-├── python-codes/
-│   Python practice scripts
-│
-└── Entri-Assessment/
-    Training assignments and outputs
+|-- c-codes
+|     C programming practice (pointers, memory, patterns)
+
+|-- data-structures
+|     Basic data structure implementations
+
+|-- embedded-codes
+|     Embedded system examples (AVR, drivers, etc.)
+
+|-- python-codes
+|     Python practice scripts
+
+|-- Entri-Assessment
+      Training assignments and outputs
 
 
 ---
