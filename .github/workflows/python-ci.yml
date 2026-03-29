@@ -1,0 +1,44 @@
+name: Python Programs CI
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "python-codes/**"
+  pull_request:
+    branches: ["main"]
+    paths:
+      - "python-codes/**"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v5
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Run Python Scripts
+      run: |
+        set -e
+
+        echo "Searching for Python files..."
+
+        files=$(find python-codes -name "*.py")
+
+        echo "Files found:"
+        echo "$files"
+        echo "--------------------------------"
+
+        for file in $files
+        do
+          echo "Running $file"
+          python "$file"
+          echo "SUCCESS: $file executed"
+          echo "--------------------------------"
+        done

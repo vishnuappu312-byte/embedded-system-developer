@@ -13,70 +13,37 @@ This repository contains my **C programming practice, data structures, and embed
 
 embedded-system-developer
 
-├── c-codes  
-Basic C programs such as pointers, memory allocation, and pattern programs.
+|-- c-codes
+|     C programming practice (pointers, memory, patterns)
 
-├── data-structures  
-Implementation of fundamental data structures.
+|-- data-structures
+|     Basic data structure implementations
 
-├── embedded-examples  
-Embedded programming examples and experiments.
+|-- embedded-codes
+|     Embedded system examples (AVR, drivers, etc.)
 
-└── Entri-Assessment  
-Programming tasks completed during Entri training.
+|-- python-codes
+|     Python practice scripts
 
----
+|-- Entri-Assessment
+      Training assignments and outputs
 
-## Topics Covered
-
-- Basic C Programming
-- Pointer Concepts
-- Bitwise Operations
-- Dynamic Memory Allocation
-- Structure Packing
-- Command Line Arguments
-- Pattern Generation Programs
-
----
-
-## Learning Progress
-
-### C Programming
-- [x] Basic syntax
-- [x] Arrays
-- [x] Pointers
-- [x] Structures
-- [x] Dynamic memory allocation
-- [x] Bitwise operations
-- [ ] File handling
-
-### Data Structures
-- [x] Arrays
-- [ ] Linked List
-- [ ] Stack
-- [ ] Queue
-
-### Embedded Systems
-- [x] Bit manipulation
-- [ ] UART communication
-- [ ] I2C communication
-- [ ] SPI communication
-- [ ] Modbus protocol
 
 ---
 
 ## Development Environment
 
-Language: **C**  
-Editor: **VS Code**  
+Language: **C** , **Python** , **C++** , **Embedded C**   
+Editor: **VS Code** , **AVR-Microchip Studio** ,**Cube-IDE** , **Arduino-IDE**
 Version Control: **Git & GitHub**  
-Platform: **macOS**
+Platform: **macOS**, **Windows**
 
 ---
 
 ## Continuous Integration
 
-This repository uses **GitHub Actions** to automatically compile and test C programs whenever code is pushed.
+This repository uses **GitHub Actions** to automatically compile and test C programs and Python Scripts whenever code is pushed.
+
 
 ---
 
