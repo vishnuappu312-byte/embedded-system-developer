@@ -1,1 +1,10 @@
+
+
+
+
+#visual studio
+.vs/
+**/.vs/
+
+
 .DS_Store
