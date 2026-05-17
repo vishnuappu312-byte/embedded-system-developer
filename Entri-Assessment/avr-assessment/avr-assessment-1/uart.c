@@ -52,7 +52,7 @@ void UART_TxNumber(uint32_t num)
 	ltoa(num,buffer,10);
 	UART_String(buffer);
 }
-
+/*
 void UART_TxFloat(float value)
 {
 	char buffer[10];
@@ -60,4 +60,33 @@ void UART_TxFloat(float value)
 	dtostrf(value,4,2,buffer);
 
 	UART_String(buffer);
+}
+*/
+
+void UART_TxFloat(float value)
+{
+	uint16_t int_part;
+	uint16_t frac_part;
+
+	if(value < 0)
+	{
+		UART_TxChar('-');
+
+		value = -value;
+	}
+
+	int_part = (uint16_t)value;
+
+	frac_part = (uint16_t)((value - int_part) * 100);
+
+	UART_TxNumber(int_part);
+
+	UART_TxChar('.');
+
+	if(frac_part < 10)
+	{
+		UART_TxChar('0');
+	}
+
+	UART_TxNumber(frac_part);
 }
