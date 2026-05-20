@@ -31,7 +31,7 @@ int main(void)
 	UART_init();
 
 	lcd_set_cursor(0,0);
-	lcd_print("TEMP:");
+	lcd_print("TEMPERATURE:");
 
 	while (1)
 	{
@@ -42,22 +42,20 @@ int main(void)
 		temperature = (adc_value * 5.0 * 100.0) / 1024.0;
 
 		// LCD Display
-		lcd_set_cursor(0,6);
+		lcd_set_cursor(1,0);
 
 		lcd_print("      ");
 
-		lcd_set_cursor(0,6);
+		lcd_set_cursor(1,0);
 
 		lcd_print_float(temperature);
 
-		lcd_data(223);
+		lcd_data(223); // decimal 223 is the degree symbol in the LCD character set
 
 		lcd_data('C');
 
 		// UART Output
 		UART_String("Temperature = ");
-
-		char buffer[10];
 
 		UART_TxFloat(temperature);
 
