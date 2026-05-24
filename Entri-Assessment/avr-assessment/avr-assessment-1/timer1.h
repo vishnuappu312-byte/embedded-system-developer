@@ -12,6 +12,6 @@
 #include <avr/io.h>
 #include <stdint.h>
 
-void timer0_delay_ms(uint16_t ms);
+void timer1_init(uint16_t ms);
 
 #endif /* TIMER_H_ */

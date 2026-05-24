@@ -9,12 +9,21 @@
 
 #include <avr/io.h>
 #include <stdlib.h>
+#include <avr/interrupt.h>
+
 
 #include "lcd.h"
 #include "adc.h"
 #include "uart.h"
-#include "timer0.h"
+#include "timer1.h"
 
+ISR(TIMER1_COMPA_vect)
+
+{
+
+   PORTB ^= (1 << PB0);
+
+}
 
 
 int main(void)
@@ -29,6 +38,11 @@ int main(void)
 	adc_init();
 
 	UART_init();
+    // Custom delay
+	timer1_init(500); // 500 ms delay
+
+	sei();
+
 
 	lcd_set_cursor(0,0);
 	lcd_print("TEMPERATURE:");
@@ -62,10 +76,9 @@ int main(void)
 		UART_String(" C\r\n");
 
 		// LED Blink
-		PORTB ^= (1 << PB0);
+		//PORTB ^= (1 << PB0);
 
-		// Custom delay
-	   timer0_delay_ms(1000);
+
 	}
 }
 
