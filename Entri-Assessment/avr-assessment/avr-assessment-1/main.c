@@ -17,11 +17,21 @@
 #include "uart.h"
 #include "timer1.h"
 
+volatile uint8_t one_sec_flag = 0;
+
 ISR(TIMER1_COMPA_vect)
 
 {
+   static uint8_t count = 0;
+
 
    PORTB ^= (1 << PB0);
+   count++;
+   if(count >= 2) // Toggle every 1 second (2 * 500 ms)
+   {
+	   one_sec_flag = 1;
+	   count = 0;
+   }
 
 }
 
@@ -49,6 +59,10 @@ int main(void)
 
 	while (1)
 	{
+		if(one_sec_flag)
+		{
+		one_sec_flag = 0;
+		
 		// Read ADC0
 		adc_value = read_adc(0);
 
@@ -80,5 +94,6 @@ int main(void)
 
 
 	}
+   }
 }
 
