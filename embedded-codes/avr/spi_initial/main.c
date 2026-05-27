@@ -20,7 +20,7 @@ int main()
   spi_init();
   bmp280_init();
   read_chipID();
-      read_calibration_data();   // <-- MISSING
+      read_calibration_data();  
 
   while(1)
   { 
