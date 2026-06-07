@@ -34,4 +34,16 @@ int main()
 
     return 0;
 }
-/*The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1.*/
+/*The Fibonacci series is a sequence of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1.
+how it works:
+1. The program first prompts the user to enter the number of terms in the Fibonacci series and reads it into the variable n.
+2. It checks if n is less than or equal to 0. If it is, the program prints a message asking the user to enter a positive integer and exits.
+3. If n is a positive integer, the program calls the printFibonacci function, passing n as an argument.
+4. The printFibonacci function initializes two variables, a and b, to represent the two preceding numbers in the Fibonacci sequence, starting with 0 and 1.
+5. It then uses a for loop to iterate n times, printing the current value of a in each iteration.
+6. Inside the loop, it calculates the next number in the sequence (c) by adding a and b, then updates a to be b and b to be c for the next iteration.
+7. After the loop completes, the function prints a newline character to end the output.
+Example: If the user enters 10, the output will be "Fibonacci Series: 0 1 1 2 3 5 8 13 21 34". This shows the first 10 terms of the Fibonacci series.
+
+
+*/

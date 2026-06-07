@@ -49,3 +49,10 @@ int main()
 
     return 0;
 }
+/* how it works:
+1. The program first prompts the user to enter a number and reads it into the variable num.
+2. It then calls the decbin function to print the binary representation of the original number.
+3. The setbit function is called to set the bit at position 3, and the result is printed.
+4. The clearbit function is called to clear the bit at position 5, and the result is printed.
+5. The togglebit function is called to toggle the bit at position 2, and the result is printed.
+*/

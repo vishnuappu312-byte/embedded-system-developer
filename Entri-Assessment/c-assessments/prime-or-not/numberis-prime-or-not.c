@@ -36,4 +36,9 @@ int main()
 }
 
 /*A prime number is a number greater than 1 that is divisible only by 1 and itself.
-In the program, a for loop checks whether the number can be divided exactly by any number from 2 to num/2.*/
+In the program, a for loop checks whether the number can be divided exactly by any number from 2 to num/2.
+
+
+
+
+*/

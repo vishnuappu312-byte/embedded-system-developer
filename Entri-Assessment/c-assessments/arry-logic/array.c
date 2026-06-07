@@ -38,3 +38,15 @@ int main()
 
     return 0;
 } 
+/*
+how its work:
+1. The program first prompts the user to enter the size of the array and then reads that value into the variable n.
+2. It then declares an array of integers with the size specified by the user.
+3. The program prompts the user to enter the elements of the array and reads them into the array using a loop.
+4. The program uses a nested loop to sort the array in ascending order. The outer loop iterates through each element, while the inner loop compares the current element with the subsequent elements and swaps them if they are out of order.
+5. After sorting, the program prints the sorted array.
+6. Finally, it prints the second largest element, which is located at index n-2 in the sorted array (since array indexing starts at 0). 
+Note: This program assumes that the user will enter at least two elements to ensure that there is a second largest element.
+
+
+*/

@@ -29,3 +29,7 @@ int main()
 The recursive Euclidean Algorithm. If the second number becomes zero, the first number is the GCD. Otherwise, I recursively call the function with (b, a % b) until the remainder becomes zero.*/
 //GCD(a,b) = GCD(b, a%b)
 // use of % operator to find the remainder of a divided by b.
+/*
+
+
+*/

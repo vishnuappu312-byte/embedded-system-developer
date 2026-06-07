@@ -55,3 +55,15 @@ int main()
 
     return 0;
 }
+
+/* how it works:
+1. The program first prompts the user to enter a decimal number and reads it into the variable dec_num.
+2. It then prompts the user to enter the target base and reads it into the variable t_base.
+3. The convertToBase function is called to perform the conversion.
+4. The result is printed to the user.
+5. The convertToBase function uses a loop to repeatedly divide the decimal number by the target base and store the remainders in the hex_num array. The digits array is used to map remainders to their corresponding characters for bases greater than 10.
+6. The loop continues until the decimal number is reduced to 0, at which point the remainders have been stored in reverse order in the hex_num array.
+7. Finally, the program prints the converted number by iterating through the hex_num array in reverse order, starting from the last index where a digit was stored down to the first index. 
+Note: The program assumes that the user will enter a valid decimal number and a valid target base (2, 8, or 16). It does not handle invalid input or negative numbers.  
+
+*/
