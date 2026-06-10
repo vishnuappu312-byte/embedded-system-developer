@@ -4,7 +4,7 @@
 int main()
 {
     char str[100];
-    int i;
+    size_t i;
     printf("Enter a string: ");
     scanf("%[^\n]s", str);
     for(i = 0; i < strlen(str); i++)
