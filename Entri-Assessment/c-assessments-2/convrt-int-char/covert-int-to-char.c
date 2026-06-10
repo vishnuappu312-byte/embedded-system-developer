@@ -2,13 +2,12 @@
 
 int main()
 {
-    int num, temp, i = 0, j;
+    int num, i = 0, j;
     char str[20];
 
     printf("Enter an integer: ");
     scanf("%d", &num);
 
-    //temp = num;
 
     if(num == 0)
     {
