@@ -12,6 +12,7 @@ float difference(float a, float b)
 {
     return a - b;
 }
+
 float product(float a, float b)
 {
     return a * b;

@@ -100,10 +100,6 @@ important:
 1. The first while loop ensures that we compare elements from both arrays until one of them is fully traversed. This allows us to merge the arrays in a single pass, maintaining the sorted order.
 2. The second and third while loops handle the case where one of the arrays has remaining elements  after the first while loop finishes. This ensures that all elements from both arrays are included in the merged result, even if one array is longer than the other.
 
-    */
-
-
-    /*
     
 NB: ARRAY SORTING & MERGING QUESTIONS
 

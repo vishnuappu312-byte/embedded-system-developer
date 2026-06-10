@@ -11,7 +11,7 @@ void convertToBase(int dec_num, int t_base)
     if (dec_num == 0)
     {
     hex_num[i++] = '0';
-    return 0;
+   // return 0;
     }
     while (dec_num != 0)
     {
@@ -47,7 +47,7 @@ int main()
     convertToBase(dec_num, t_base);
 
     printf("The number %d in base %d is: ", dec_num, t_base);
-    for (i = i - 1; i > 0; i--)
+    for (i = i - 1; i >= 0; i--)
     {
         printf("%c", hex_num[i]);
     }
