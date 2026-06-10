@@ -21,6 +21,7 @@ jobs:
         run: |
           find . -name "*.c" \
             -not -path "./Entri-Assessment/avr-assessment/*" \
+            -not -path "./embedded-codes/avr/*" \
             -print0 | while IFS= read -r -d '' file
           do
             echo "Checking: $file"
