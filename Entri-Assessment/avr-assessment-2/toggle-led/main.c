@@ -3,6 +3,8 @@
 #include <avr/interrupt.h>
 #include <stdint.h>
 
+#define F_CPU 16000000UL
+
 #define LED_ON_STATE   0
 #define LED_OFF_STATE  1
 
