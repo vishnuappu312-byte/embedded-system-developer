@@ -296,7 +296,7 @@ uint32_t bmp280_pressure_compensation(int32_t adc_P) {
     return 0;
   }
 
-p = (int64_t)1048576 - adc_P;
+  p = (int64_t)1048576 - adc_P;
 
   p = (((p << 31) - var2) * 3125) / var1;
 
@@ -307,6 +307,8 @@ p = (int64_t)1048576 - adc_P;
   p = ((p + var1 + var2) >> 8)+ (((int64_t)dig_P7) << 4);
 
   return (uint32_t)(p / 256);
+
+  
 }
 
 void read_calibration_data(void) {

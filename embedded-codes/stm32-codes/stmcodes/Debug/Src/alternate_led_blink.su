@@ -1,0 +1,2 @@
+../Src/alternate_led_blink.c:60:6:alternate_led_init	8	static
+../Src/alternate_led_blink.c:85:6:alternate_led_task	8	static
