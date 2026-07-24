@@ -1,0 +1,7 @@
+Src/button_press.o: ../Src/button_press.c \
+ /Users/vishnu/Desktop/personalcodes/stm32_projects/Button_press_and_alter_led/drivers/inc/stm32f401xx_gpio.h \
+ /Users/vishnu/Desktop/personalcodes/stm32_projects/Button_press_and_alter_led/drivers/inc/stm32f401xx.h \
+ ../Inc/delay.h
+/Users/vishnu/Desktop/personalcodes/stm32_projects/Button_press_and_alter_led/drivers/inc/stm32f401xx_gpio.h:
+/Users/vishnu/Desktop/personalcodes/stm32_projects/Button_press_and_alter_led/drivers/inc/stm32f401xx.h:
+../Inc/delay.h:

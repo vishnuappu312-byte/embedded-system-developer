@@ -1,0 +1,2 @@
+../Src/button_press.c:62:6:button_press_init	8	static
+../Src/button_press.c:87:6:button_press_task	8	static

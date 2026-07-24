@@ -1,0 +1,8 @@
+"./Src/alternate_led_blink.o"
+"./Src/button_press.o"
+"./Src/delay.o"
+"./Src/main.o"
+"./Src/syscalls.o"
+"./Src/sysmem.o"
+"./Startup/startup_stm32f401retx.o"
+"./drivers/src/stm32f401xx_gpio.o"
