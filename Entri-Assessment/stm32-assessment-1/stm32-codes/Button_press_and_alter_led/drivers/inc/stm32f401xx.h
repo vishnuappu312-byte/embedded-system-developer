@@ -1015,15 +1015,15 @@ typedef struct
 
 #define TIM1_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<0))
 #define USART1_PCLK_EN_LOW()					(RCC-> APB2LPENR |= (1<<4))
-#define USART6_PCLK_EN_LOW()					(RCC-> AHP2LPENR |= (1<<5))
-#define ADC1_PCLK_EN_LOW()						(RCC-> AHP2LPENR |= (1<<8))
-#define SDIO_PCLK_EN_LOW()						(RCC-> AHP2LPENR |= (1<<11))
-#define SPI1_PCLK_EN_LOW()						(RCC-> AHP2LPENR |= (1<<12))
-#define SPI4_PCLK_EN_LOW()						(RCC-> AHP2LPENR |= (1<<13))
-#define SYSCFG_PCLK_EN_LOW()					(RCC-> AHP2LPENR |= (1<<14))
-#define TIM9_PCLK_EN_LOW()						(RCC-> AHP2LPENR |= (1<<16))
-#define TIM10_PCLK_EN_LOW()						(RCC-> AHP2LPENR |= (1<<17))
-#define TIM11_PCLK_EN_LOW()						(RCC-> AHP2LPENR |= (1<<18))
+#define USART6_PCLK_EN_LOW()					(RCC-> APB2LPENR |= (1<<5))
+#define ADC1_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<8))
+#define SDIO_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<11))
+#define SPI1_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<12))
+#define SPI4_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<13))
+#define SYSCFG_PCLK_EN_LOW()					(RCC-> APB2LPENR |= (1<<14))
+#define TIM9_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<16))
+#define TIM10_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<17))
+#define TIM11_PCLK_EN_LOW()						(RCC-> APB2LPENR |= (1<<18))
 
 /*
  * APB2 PERIPHERAL CLOCK DISABLE IN LOW POWER
@@ -1084,17 +1084,17 @@ typedef struct
  * APB2 PERIPHERAL RESET REGISTER
  */
 
-#define TIM1_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<0); RCC->APB1RSTR &= ~(1<<0); } while(0)
-#define USART1_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<4); RCC->APB1RSTR &= ~(1<<4); } while(0)
-#define USART6_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<5); RCC->APB1RSTR &= ~(1<<5); } while(0)
-#define ADC1_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<8); RCC->APB1RSTR &= ~(1<<8); } while(0)
-#define SDIO_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<11); RCC->APB1RSTR &= ~(1<<11); } while(0)
-#define SPI1_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<12); RCC->APB1RSTR &= ~(1<<12); } while(0)
-#define SPI4_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<13); RCC->APB1RSTR &= ~(1<<13); } while(0)
-#define SYSCFG_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<14); RCC->APB1RSTR &= ~(1<<14); } while(0)
-#define TIM9_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<16); RCC->APB1RSTR &= ~(1<<16); } while(0)
-#define TIM10_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<17); RCC->APB1RSTR &= ~(1<<17); } while(0)
-#define TIM11_REG_RESET() 					   do { RCC->APB1RSTR |= (1<<18); RCC->APB1RSTR &= ~(1<<18); } while(0)
+#define TIM1_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<0); RCC->APB2RSTR &= ~(1<<0); } while(0)
+#define USART1_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<4); RCC->APB2RSTR &= ~(1<<4); } while(0)
+#define USART6_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<5); RCC->APB2RSTR &= ~(1<<5); } while(0)
+#define ADC1_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<8); RCC->APB2RSTR &= ~(1<<8); } while(0)
+#define SDIO_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<11); RCC->APB2RSTR &= ~(1<<11); } while(0)
+#define SPI1_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<12); RCC->APB2RSTR &= ~(1<<12); } while(0)
+#define SPI4_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<13); RCC->APB2RSTR &= ~(1<<13); } while(0)
+#define SYSCFG_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<14); RCC->APB2RSTR &= ~(1<<14); } while(0)
+#define TIM9_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<16); RCC->APB2RSTR &= ~(1<<16); } while(0)
+#define TIM10_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<17); RCC->APB2RSTR &= ~(1<<17); } while(0)
+#define TIM11_REG_RESET() 					   do { RCC->APB2RSTR |= (1<<18); RCC->APB2RSTR &= ~(1<<18); } while(0)
 
 
 /* RCC_CR Register Bit Positions */
